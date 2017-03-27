@@ -9,9 +9,10 @@
 		<p>Thanks! Stored name and email to cookie.</p>
 
 		<?php
-			setcookie('fname', $_POST['fname']);
-			setcookie('lname', $_POST['lname']);
-			setcookie('email', $_POST['email']);
+			#cookie expires one hour
+			setcookie('fname', $_POST['fname'], time() + 3600);
+			setcookie('lname', $_POST['lname'], time() + 3600);
+			setcookie('email', $_POST['email'], time() + 3600);
 		?>
 
 	</body>
