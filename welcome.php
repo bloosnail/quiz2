@@ -11,7 +11,7 @@
 		<?php
 			if (isset($_COOKIE["fname"])){
 				echo "Hi, " . $_COOKIE["fname"] . ", you recently signed up with the email address: " .
-				$_COOKIE["email"] . ", thank you!"
+				$_COOKIE["email"] . ", thank you!";
 			}
 		?>
 	
